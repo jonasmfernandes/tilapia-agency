@@ -1,0 +1,25 @@
+:root {
+    --bs-green-primary: #99BA3F;   /* Cor personalizada */
+    --bs-green-hover: #B9D179;
+    --bs-green-light: #F1F5E9;
+    --bs-black: #2C2C2C;
+    --bs-gray: #2C2C2C;
+    --bs-gray-light: #FAFAFA;
+    --bs-white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 0 13em;
+}
+
+.border-green-primary {
+    border-top: 5px solid var(--bs-green-primary); 
+}
+
+
