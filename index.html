@@ -136,6 +136,85 @@
       </div>
       </section>
 
+      <section id="aboutSection" class="d-flex flex-column-reverse flex-md-row justify-content-between">
+        <div id="aboutVideo">
+          <div class="position-relative">
+            <img src="assets/video/Imagem 10.png" alt="Clique para assistir" id="thumbnail">
+            <div class="position-absolute top-50 start-50 translate-middle text-center text-white p-3" id="overlay" >
+              <img src="assets/icons/circle-play-solid (3).svg" alt="">
+              <h4>Assista ao nosso vídeo comemorativo</h4>
+            </div>
+          </div>
+        </div>
+
+        <div id="aboutText">
+          <h3>SOBRE NÓS</h3>
+        <h2>OLÁ, NÓS SOMOS A TILÁPIA AGENCY</h2>
+        <p>Somos uma agência digital dedicada a transformar ideias em soluções inovadoras. Com uma equipe especializada em marketing, desenvolvimento de sites, aplicativos e design, buscamos ajudar empresas a se destacarem no mundo online. Oferecemos serviços personalizados que atendem às necessidades de cada cliente, desde a criação de funcionalidades sob medida até estratégias de marketing digital e otimização para motores de busca. Nosso objetivo é proporcionar uma experiência única aos seus usuários e impulsionar o crescimento do seu negócio, sempre com foco em resultados eficientes e de qualidade.</p>
+
+        <div id="missionContainer" class="d-flex gap-5">
+
+          <div class="d-flex flex-column missionAbout gap-3">
+              <div class="d-flex align-items-center gap-2">
+                  <img src="assets/icons/angle-right-solid.svg" alt="">
+                  <span>Inovação</span>
+              </div>
+      
+              <div class="d-flex align-items-center gap-2">
+                  <img src="assets/icons/angle-right-solid.svg" alt="">
+                  <span>Personalização</span>
+              </div>
+      
+              <div class="d-flex align-items-center gap-2">
+                  <img src="assets/icons/angle-right-solid.svg" alt="">
+                  <span>Resultados</span>
+              </div>
+          </div>
+      
+          <div class="d-flex flex-column missionAbout gap-3">
+              <div class="d-flex align-items-center gap-2">
+                  <img src="assets/icons/angle-right-solid.svg" alt="">
+                  <span>Agilidade</span>
+              </div>
+      
+              <div class="d-flex align-items-center gap-2">
+                  <img src="assets/icons/angle-right-solid.svg" alt="">
+                  <span>Experiência</span>
+              </div>
+      
+              <div class="d-flex align-items-center gap-2">
+                  <img src="assets/icons/angle-right-solid.svg" alt="">
+                  <span>Comprometimento</span>
+              </div>
+          </div>
+      
+        </div>
+        </div>
+
+      </section>
+
+      <section>
+        <img src="assets/banner/Paralax.png" alt="">
+      </section>
+      
+      <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header d-flex justify-content-end align-items-center">
+              <button type="button" id="closeBtnVideo" class="btn d-flex align-items-center" data-bs-dismiss="modal" aria-label="Close">
+                <span>FECHAR</span>
+                <img src="assets/icons/xmark-solid-gray.svg" alt="Fechar" class="ms-2">
+              </button>
+            </div>
+            <div class="modal-body">
+              <video id="myVideoModal" class="w-100" controls>
+                <source src="assets/video/videoplayback.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+      
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
