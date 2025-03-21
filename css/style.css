@@ -353,7 +353,32 @@ header {
     object-position: center; 
 
 }
+#mapsSection {
+    padding: 5em 15em;
+    gap: 8vw;
+}
+#mapsSection h3 {
+  color: var(--bs-green-primary);
+  letter-spacing: 5px;
+  font-size: 1.2em;
+}
 
+#mapsSection h2 {
+  font-weight: 600;
+  width: 100%;
+}
+
+#mapsSection p {
+  margin-top: 2em;
+  color: var(--bs-gray-secondary);
+  width: 100%;
+  font-size: 0.9em;
+}
+
+#mapsSection iframe {
+    border: 0; 
+    border-radius: 20px;
+}
 @media (max-width: 576px) {
   header {
     padding: 1vh 4vw 1vh 4vw;
@@ -547,6 +572,41 @@ header {
     object-fit: cover;
     object-position: center;
 }
+
+#mapsSection {
+    padding: 5vh 5vw 8vh 5vw;
+    gap: 8vw;
+  }
+
+  #mapsSection div {
+    width: 100%;
+  }
+
+#mapsSection h3 {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 0.8em;
+  }
+  
+  #mapsSection h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 1.4em;
+  }
+  
+  #mapsSection p {
+    margin-top: 1em;
+    width: 100%;
+    font-size: 1em;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  #mapsSection iframe {
+    width: 100%;
+    height: 35vh;
+  }
+  
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -605,7 +665,7 @@ header {
   }
 
   #aboutSection {
-    padding: 1vh 5vw 8vh 5vw;
+    padding: 3vh 5vw 12vh 5vw;
     gap: 8vw;
   }
   
@@ -677,6 +737,35 @@ header {
     background-position: center;
     background-size: cover;
 }
+#mapsSection {
+    padding: 5vh 5vw 8vh 5vw;
+    gap: 8vw;
+  }
+
+#mapsSection h3 {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 0.8em;
+  }
+  
+  #mapsSection h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 1.4em;
+  }
+  
+  #mapsSection p {
+    margin-top: 1em;
+    width: 110%;
+    font-size: 1em;
+    margin-bottom: 0;
+  }
+
+  #mapsSection iframe {
+    width: 100%;
+    height: 50vh;
+  }
+  
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -800,6 +889,25 @@ header {
     text-align: center;
     font-size: 1em;
   }
+
+#mapsSection {
+    padding: 5em 5vw;
+    gap: 8vw;
+}
+#mapsSection h3 {
+  font-size: 0.8em;
+}
+
+#mapsSection h2 {
+  width: 100%;
+  font-size: 1.4em;
+}
+
+#mapsSection p {
+  margin-top: 1em;
+  width: 110%;
+  font-size: 1em;
+}
 }
 
 @media (min-width: 1200px) {
@@ -896,5 +1004,24 @@ header {
     width: 100%;
     background-position: center;
     background-size: cover;
+}
+
+#mapsSection {
+    padding: 5em 15em;
+    gap: 8vw;
+}
+#mapsSection h3 {
+  font-size: 0.8em;
+}
+
+#mapsSection h2 {
+  width: 100%;
+  font-size: 1.4em;
+}
+
+#mapsSection p {
+  margin-top: 1em;
+  width: 110%;
+  font-size: 1em;
 }
 }
