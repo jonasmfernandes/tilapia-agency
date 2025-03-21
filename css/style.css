@@ -382,40 +382,48 @@ header {
 #newsletterSection {
   background: linear-gradient(to right, #4f9e88, #a1bd36);
   height: 40vh;
-  padding: 0 28em;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#newsletterSection h3 {
+#newsletterText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+}
+#newsletterSection #newsletterText h3 {
   color: var(--bs-green-hover);
   letter-spacing: 5px;
   font-size: 1em;
 }
 
-#newsletterSection h2 {
+#newsletterSection #newsletterText h2 {
   width: 100%;
+  display: inline-block;
   text-align: center;
   font-size: 2.2em;
   font-weight: 600;
   color: var(--bs-gray-light);
 }
-
 #newsletterEmail {
-  margin-top: 1.5em;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  gap: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
 }
-#newsletterEmail input {
+#newsletterEmail #newsletterContent {
+  width: 29vw;
+  max-width: 100%;
+  margin-top: 1.5em;
+}
+#newsletterEmail #newsletterContent input {
   flex-grow: 1;
   padding: 15px 15px 15px 25px;
   border-radius: 30px;
-
   font-size: 1em;
   color: var(--bs-gray-secondary);
   background-color: transparent;
@@ -427,9 +435,26 @@ header {
   color: #ffffff;
   opacity: 1;
 }
+#newsletterContent {
+    color: white;
+}
 
-#newsletterEmail button {
-  padding: 15px 2em;
+#checkboxEmail .inputCheckbox input {
+    appearance: none; /* Remove o estilo padrão do navegador */
+    -webkit-appearance: none; /* Para Safari */
+    -moz-appearance: none; /* Para Firefox */
+    padding: 0px;
+    cursor: pointer;
+    background-color: transparent; /* Corrigido aqui */
+    border: 2px solid var(--bs-white); /* Adicione uma borda para visualização */
+    border-radius: 50%; /* Para ficar circular */
+    width: 18px;
+    height: 18px;
+    outline: none; /* Remove o contorno ao clicar */
+}
+
+#buttonNewsletter {
+    padding: 2vh 4vh;   
 }
 
 @media (max-width: 576px) {
@@ -658,6 +683,40 @@ header {
     width: 100%;
     height: 35vh;
   }
+
+  #newsletterSection {
+    background: linear-gradient(to right, #4f9e88, #a1bd36);
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #newsletterText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+  }
+
+  #newsletterSection #newsletterText h2 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--bs-gray-light);
+  }
+
+  #newsletterEmail {
+    width: 75%;
+    max-width: 500px;
+    margin-top: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -815,6 +874,19 @@ header {
     width: 100%;
     height: 50vh;
   }
+
+  #newsletterText {
+    width: 90vw;
+  }
+
+  #newsletterSection #newsletterText h2 {
+    font-size: 1.8em;
+  }
+
+  #newsletterEmail {
+    width: 85%;
+    max-width: 500px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -960,22 +1032,21 @@ header {
   #newsletterSection {
     background: linear-gradient(to right, #4f9e88, #a1bd36);
     height: 40vh;
-    padding: 0 28em;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  #newsletterSection h3 {
-    color: var(--bs-green-hover);
-    letter-spacing: 5px;
-    font-size: 1em;
+  #newsletterText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
   }
 
-  #newsletterSection h2 {
-    width: 100%;
+  #newsletterSection #newsletterText h2 {
     text-align: center;
     font-size: 2.2em;
     font-weight: 600;
@@ -983,32 +1054,15 @@ header {
   }
 
   #newsletterEmail {
+    width: 80%;
+    max-width: 600px;
     margin-top: 1.5em;
     display: flex;
     align-items: center;
-    width: 100%;
+    justify-content: space-between;
     gap: 2em;
   }
-  #newsletterEmail input {
-    flex-grow: 1;
-    padding: 15px 15px 15px 25px;
-    border-radius: 30px;
 
-    font-size: 1em;
-    color: var(--bs-gray-secondary);
-    background-color: transparent;
-    border: 1px solid var(--bs-white);
-    color: white;
-    outline: none;
-  }
-  ::placeholder {
-    color: #ffffff;
-    opacity: 1;
-  }
-
-  #newsletterEmail button {
-    padding: 15px 2em;
-  }
 }
 
 @media (min-width: 1200px) {

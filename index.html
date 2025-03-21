@@ -215,15 +215,27 @@
       </section>
 
       <section id="newsletterSection">
-        <h3>NEWSLETTER</h3>
-        <H2>FIQUE POR DENTRO DAS NOVIDADES</H2>
+        <div id="newsletterText">
+            <h3>NEWSLETTER</h3>
+            <H2>FIQUE POR DENTRO DAS NOVIDADES</H2>
+        </div>
 
-        <div id="newsletterEmail">
-            <input
-            type="email"
-            placeholder="Seu e-mail:">
-            </input>
-            <button class="d-flex gap-3 btn btn-green-primary rounded-pill align-items-center justify-content-start">
+        <div id="newsletterEmail" class="d-flex">
+            <div id="newsletterContent" class="d-flex flex-column">
+                <input
+                type="email"
+                placeholder="Seu e-mail:">
+                </input>
+                <div id="checkboxEmail">
+                    <input class="inputCheckbox" type="checkbox" value="" id="flexCheckDefault"
+                    >
+                    <label class="" for="flexCheckDefault">
+                    Aceito receber e-mails da Tilápia Agency
+                    </label>
+                  </div>
+            </div>
+            
+            <button id="buttonNewsletter" class="d-flex gap-3 btn btn-green-primary rounded-pill align-items-center justify-content-start">
                 <span>Assinar</span>
                 <img src="assets/icons/arrow-right-solid (1).svg" alt="" />
             </button>
