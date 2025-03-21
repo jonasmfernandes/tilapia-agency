@@ -189,7 +189,7 @@ header {
 }
 #serviceContainer {
   width: 100%;
-  max-width: 75vw; 
+  max-width: 75vw;
   overflow: hidden;
   position: relative;
   margin-top: 5em;
@@ -346,16 +346,15 @@ header {
 }
 
 #parallaxSection img {
-    min-height: 60vh;
-    width: 100%;
-    background-position: center;
-    object-fit: cover; 
-    object-position: center; 
-
+  min-height: 60vh;
+  width: 100%;
+  background-position: center;
+  object-fit: cover;
+  object-position: center;
 }
 #mapsSection {
-    padding: 5em 15em;
-    gap: 8vw;
+  padding: 5em 15em;
+  gap: 8vw;
 }
 #mapsSection h3 {
   color: var(--bs-green-primary);
@@ -376,9 +375,63 @@ header {
 }
 
 #mapsSection iframe {
-    border: 0; 
-    border-radius: 20px;
+  border: 0;
+  border-radius: 20px;
 }
+
+#newsletterSection {
+  background: linear-gradient(to right, #4f9e88, #a1bd36);
+  height: 40vh;
+  padding: 0 28em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#newsletterSection h3 {
+  color: var(--bs-green-hover);
+  letter-spacing: 5px;
+  font-size: 1em;
+}
+
+#newsletterSection h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 2.2em;
+  font-weight: 600;
+  color: var(--bs-gray-light);
+}
+
+#newsletterEmail {
+  margin-top: 1.5em;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 2em;
+}
+#newsletterEmail input {
+  flex-grow: 1;
+  padding: 15px 15px 15px 25px;
+  border-radius: 30px;
+
+  font-size: 1em;
+  color: var(--bs-gray-secondary);
+  background-color: transparent;
+  border: 1px solid var(--bs-white);
+  color: white;
+  outline: none;
+}
+::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+#newsletterEmail button {
+  padding: 15px 2em;
+}
+
 @media (max-width: 576px) {
   header {
     padding: 1vh 4vw 1vh 4vw;
@@ -502,13 +555,12 @@ header {
     padding: 1vh 4vw 8vh 5vw;
     gap: 8vw;
   }
-  
+
   #aboutText {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
   #aboutText h3 {
     color: var(--bs-green-primary);
@@ -541,7 +593,7 @@ header {
     width: 8px;
     color: var(--bs-gray-secondary);
   }
-  
+
   .missionAbout span {
     color: var(--bs-gray-secondary);
     font-size: 0.8em;
@@ -571,9 +623,9 @@ header {
     background-size: cover;
     object-fit: cover;
     object-position: center;
-}
+  }
 
-#mapsSection {
+  #mapsSection {
     padding: 5vh 5vw 8vh 5vw;
     gap: 8vw;
   }
@@ -582,18 +634,18 @@ header {
     width: 100%;
   }
 
-#mapsSection h3 {
+  #mapsSection h3 {
     margin-top: 1em;
     text-align: center;
     font-size: 0.8em;
   }
-  
+
   #mapsSection h2 {
     text-align: center;
     width: 100%;
     font-size: 1.4em;
   }
-  
+
   #mapsSection p {
     margin-top: 1em;
     width: 100%;
@@ -606,7 +658,6 @@ header {
     width: 100%;
     height: 35vh;
   }
-  
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -668,13 +719,12 @@ header {
     padding: 3vh 5vw 12vh 5vw;
     gap: 8vw;
   }
-  
+
   #aboutText {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
   #aboutText h3 {
     color: var(--bs-green-primary);
@@ -707,7 +757,7 @@ header {
     width: 8px;
     color: var(--bs-gray-secondary);
   }
-  
+
   .missionAbout span {
     color: var(--bs-gray-secondary);
     font-size: 0.8em;
@@ -736,24 +786,24 @@ header {
     width: 100%;
     background-position: center;
     background-size: cover;
-}
-#mapsSection {
+  }
+  #mapsSection {
     padding: 5vh 5vw 8vh 5vw;
     gap: 8vw;
   }
 
-#mapsSection h3 {
+  #mapsSection h3 {
     margin-top: 1em;
     text-align: center;
     font-size: 0.8em;
   }
-  
+
   #mapsSection h2 {
     text-align: center;
     width: 100%;
     font-size: 1.4em;
   }
-  
+
   #mapsSection p {
     margin-top: 1em;
     width: 110%;
@@ -765,7 +815,6 @@ header {
     width: 100%;
     height: 50vh;
   }
-  
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -826,7 +875,7 @@ header {
     padding: 1vh 5vw 8vh 5vw;
     gap: 8vw;
   }
-  
+
   #aboutText {
     display: flex;
     flex-direction: column;
@@ -839,7 +888,6 @@ header {
     letter-spacing: 5px;
     font-size: 1em;
     text-align: start;
-    
   }
   #aboutText h2 {
     font-size: 1.3em;
@@ -865,7 +913,7 @@ header {
     width: 8px;
     color: var(--bs-gray-secondary);
   }
-  
+
   .missionAbout span {
     color: var(--bs-gray-secondary);
     font-size: 0.8em;
@@ -890,24 +938,77 @@ header {
     font-size: 1em;
   }
 
-#mapsSection {
+  #mapsSection {
     padding: 5em 5vw;
     gap: 8vw;
-}
-#mapsSection h3 {
-  font-size: 0.8em;
-}
+  }
+  #mapsSection h3 {
+    font-size: 0.8em;
+  }
 
-#mapsSection h2 {
-  width: 100%;
-  font-size: 1.4em;
-}
+  #mapsSection h2 {
+    width: 100%;
+    font-size: 1.4em;
+  }
 
-#mapsSection p {
-  margin-top: 1em;
-  width: 110%;
-  font-size: 1em;
-}
+  #mapsSection p {
+    margin-top: 1em;
+    width: 110%;
+    font-size: 1em;
+  }
+
+  #newsletterSection {
+    background: linear-gradient(to right, #4f9e88, #a1bd36);
+    height: 40vh;
+    padding: 0 28em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #newsletterSection h3 {
+    color: var(--bs-green-hover);
+    letter-spacing: 5px;
+    font-size: 1em;
+  }
+
+  #newsletterSection h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: 600;
+    color: var(--bs-gray-light);
+  }
+
+  #newsletterEmail {
+    margin-top: 1.5em;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 2em;
+  }
+  #newsletterEmail input {
+    flex-grow: 1;
+    padding: 15px 15px 15px 25px;
+    border-radius: 30px;
+
+    font-size: 1em;
+    color: var(--bs-gray-secondary);
+    background-color: transparent;
+    border: 1px solid var(--bs-white);
+    color: white;
+    outline: none;
+  }
+  ::placeholder {
+    color: #ffffff;
+    opacity: 1;
+  }
+
+  #newsletterEmail button {
+    padding: 15px 2em;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -936,7 +1037,7 @@ header {
     padding: 1vh 15em 8vh 15em;
     gap: 8vw;
   }
-  
+
   #aboutText {
     display: flex;
     flex-direction: column;
@@ -949,7 +1050,6 @@ header {
     letter-spacing: 5px;
     font-size: 1em;
     text-align: start;
-    
   }
   #aboutText h2 {
     font-size: 1.3em;
@@ -975,7 +1075,7 @@ header {
     width: 8px;
     color: var(--bs-gray-secondary);
   }
-  
+
   .missionAbout span {
     color: var(--bs-gray-secondary);
     font-size: 0.8em;
@@ -1004,24 +1104,24 @@ header {
     width: 100%;
     background-position: center;
     background-size: cover;
-}
+  }
 
-#mapsSection {
+  #mapsSection {
     padding: 5em 15em;
     gap: 8vw;
-}
-#mapsSection h3 {
-  font-size: 0.8em;
-}
+  }
+  #mapsSection h3 {
+    font-size: 0.8em;
+  }
 
-#mapsSection h2 {
-  width: 100%;
-  font-size: 1.4em;
-}
+  #mapsSection h2 {
+    width: 100%;
+    font-size: 1.4em;
+  }
 
-#mapsSection p {
-  margin-top: 1em;
-  width: 110%;
-  font-size: 1em;
-}
+  #mapsSection p {
+    margin-top: 1em;
+    width: 110%;
+    font-size: 1em;
+  }
 }
