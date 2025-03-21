@@ -264,7 +264,7 @@ header {
 }
 
 #aboutSection {
-  padding: 5em 13em;
+  padding: 5em 15em;
   gap: 8vw;
 }
 
@@ -275,12 +275,13 @@ header {
 }
 #aboutText h2 {
   font-weight: 600;
-  width: 50%;
+  width: 70%;
 }
 #aboutText p {
   margin-top: 2em;
   color: var(--bs-gray-secondary);
-  width: 95%;
+  width: 100%;
+  font-size: 0.9em;
 }
 #aboutSection #aboutVideo #thumbnail {
   border-radius: 10px;
@@ -288,7 +289,7 @@ header {
 
 #thumbnail {
   width: 30vw;
-  height: 55vh;
+  height: 80vh;
   object-fit: cover;
   filter: brightness(0.5);
 }
@@ -330,7 +331,7 @@ header {
 }
 
 #missionContainer {
-  margin-top: 2em;
+  margin-top: 1em;
 }
 .missionAbout img {
   width: 8px;
@@ -339,6 +340,11 @@ header {
 
 .missionAbout span {
   color: var(--bs-gray-secondary);
+}
+
+#parallaxSection img {
+    height: 60vh;
+    width: 100%;
 }
 @media (max-width: 576px) {
   header {
