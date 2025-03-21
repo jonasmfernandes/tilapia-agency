@@ -1,346 +1,349 @@
 :root {
-    --bs-green-primary: #99ba3f;
-    --bs-green-hover: #b9d179;
-    --bs-green-light: #f1f5e9;
-    --bs-black: #2c2c2c;
-    --bs-gray: #2c2c2c;
-    --bs-gray-secondary: #a3a3a3;
-    --bs-gray-light: #fafafa;
-    --bs-white: #ffffff;
+  --bs-green-primary: #99ba3f;
+  --bs-green-hover: #b9d179;
+  --bs-green-light: #f1f5e9;
+  --bs-black: #2c2c2c;
+  --bs-gray: #2c2c2c;
+  --bs-gray-secondary: #a3a3a3;
+  --bs-gray-light: #fafafa;
+  --bs-white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 1vh 5vw;
+}
+
+.border-green-primary {
+  border-top: 8px solid var(--bs-green-primary);
+}
+
+.border-gradient {
+  background: linear-gradient(to right, #4f9e88, #a1bd36);
+  height: 8px;
+}
+
+.btn-green-primary {
+  background-color: var(--bs-green-primary);
+  color: var(--bs-white);
+}
+
+.btn-green-primary:hover {
+  background-color: var(--bs-green-hover);
+  color: var(--bs-white);
+}
+
+.menu-custom {
+  color: var(--bs-gray-secondary);
+}
+
+.menu-custom:hover {
+  color: var(--bs-gray-secondary);
+}
+
+#rotative-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 40vw;
+  height: 100vh;
+  background-color: var(--bs-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+#buttonContainer {
+  padding: 4vh 5em;
+}
+
+#socialMediaContainer {
+  background-color: var(--bs-green-primary);
+  padding: 6vh 4em 10vh 4em;
+}
+
+#rotative-menu.active {
+  right: 0;
+}
+
+.menu-content {
+  padding: 2rem 4rem;
+  flex-grow: 1;
+}
+
+.menu-content ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.menu-content li {
+  margin: 1rem 0;
+}
+
+.menu-content a {
+  text-decoration: none;
+  color: var(--bs-white);
+  font-size: 1.3rem;
+  transition: color 0.2s;
+}
+
+.menu-content a:hover {
+  color: var(--bs-green-hover);
+}
+
+.hero-section {
+  position: relative;
+  display: flex;
+  padding: 0em 15em;
+  justify-content: start;
+  align-items: center;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  animation: changeBackground 12s infinite;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: changeBackground 12s infinite;
+  filter: brightness(0.5);
+  z-index: 1;
+}
+
+@keyframes changeBackground {
+  0% {
+    background-image: url("/assets/banner/businesswoman.png");
   }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  33% {
+    background-image: url("/assets/banner/css-js-banner.png");
   }
-  
+  66% {
+    background-image: url("/assets/banner/Foto-2.png");
+  }
+  100% {
+    background-image: url("/assets/banner/businesswoman.png");
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  width: 55%;
+}
+
+.hero-content .btn {
+  border-radius: 30px;
+  margin-top: 10px;
+  padding: 1vh 2em;
+}
+
+@media (max-width: 576px) {
   header {
-    padding: 1vh 5vw;
-  }
-  
-  .border-green-primary {
-    border-top: 8px solid var(--bs-green-primary);
-  }
-  
-  .border-gradient {
-    background: linear-gradient(to right, #4f9e88, #a1bd36);
-    height: 8px;
-  }
-  
-  .btn-green-primary {
-    background-color: var(--bs-green-primary);
-    color: var(--bs-white);
-  }
-  
-  .btn-green-primary:hover {
-    background-color: var(--bs-green-hover);
-    color: var(--bs-white);
-  }
-  
-  .menu-custom {
-    color: var(--bs-gray-secondary);
-  }
-  
-  .menu-custom:hover {
-    color: var(--bs-gray-secondary);
-  }
-  
-  #rotative-menu {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 40vw;
-    height: 100vh;
-    background-color: var(--bs-gray);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
-    transition: right 0.3s ease-in-out;
-    z-index: 1000;
-  }
-  
-  #buttonContainer {
-    padding: 4vh 5em;
-  }
-  
-  #socialMediaContainer {
-    background-color: var(--bs-green-primary);
-    padding: 6vh 4em 10vh 4em;
-  }
-  
-  #rotative-menu.active {
-    right: 0;
-  }
-  
-  .menu-content {
-    padding: 2rem 4rem;
-    flex-grow: 1;
-  }
-  
-  .menu-content ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-  }
-  
-  .menu-content li {
-    margin: 1rem 0;
-  }
-  
-  .menu-content a {
-    text-decoration: none;
-    color: var(--bs-white);
-    font-size: 1.3rem;
-    transition: color 0.2s;
-  }
-  
-  .menu-content a:hover {
-    color: var(--bs-green-hover);
-  }
-  
-  .hero-section {
-    position: relative;
-    display: flex;
-    padding: 0em 13em;
-    justify-content: start;
-    align-items: center;
-    height: 60vh; 
-    background-size: cover;
-    background-position: center;
-    animation: changeBackground 12s infinite; 
-    overflow: hidden;
+    padding: 1vh 4vw 1vh 4vw;
   }
 
-  .hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    animation: changeBackground 12s infinite;
-    filter: brightness(0.5); 
-    z-index: 1; 
+  h1 img {
+    width: 5em;
   }
-  
-  @keyframes changeBackground {
-    0% {
-      background-image: url('/assets/banner/businesswoman.png');
-    }
-    33% {
-      background-image: url('/assets/banner/css-js-banner.png');
-    }
-    66% {
-      background-image: url('/assets/banner/Foto-2.png');
-    }
-    100% {
-      background-image: url('/assets/banner/businesswoman.png');
-    }
+
+  #rotative-menu {
+    width: 80%;
   }
-  
-  .hero-content {
-    position: relative;
-    z-index: 2;    
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start; 
-    color: white;
+
+  #buttonContainer {
+    padding: 4vh 1em 0vh 1em;
   }
-  
+
+  #closeButton {
+    font-size: 0.9rem;
+  }
+
+  .menu-content {
+    padding: 1rem 3rem;
+  }
+
+  .menu-content a {
+    font-size: 1rem;
+  }
+
+  #socialMediaContainer {
+    padding: 5vh 0 5vh 0;
+  }
+
+  #socialMediaContainer #logoFooter {
+    width: 10em;
+  }
+
+  .hero-section {
+    padding: 0em 1em;
+    height: 40vh;
+    padding-bottom: 5vh;
+  }
+
   .hero-content h1 {
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: bold;
   }
-  
+
   .hero-content p {
-    font-size: 1rem;
-    width: 55%;
+    font-size: 0.8rem;
+    width: 100%;
+    max-width: 80%;
   }
-  
+
   .hero-content .btn {
     border-radius: 30px;
     margin-top: 10px;
-    padding: 1vh 3em;
-  }
-
-  @media (max-width: 576px) {
-    header {
-      padding: 1vh 3vw 1vh 3vw;
-    }
-  
-    h1 img {
-      width: 5em;
-    }
-  
-    #rotative-menu {
-      width: 80%;
-    }
-  
-    #buttonContainer {
-      padding: 4vh 1em 0vh 1em;
-    }
-  
-    #closeButton {
-      font-size: 0.9rem;
-    }
-  
-    .menu-content {
-      padding: 1rem 3rem;
-    }
-  
-    .menu-content a {
-      font-size: 1rem;
-    }
-  
-    #socialMediaContainer {
-      padding: 5vh 0 5vh 0;
-    }
-  
-    #socialMediaContainer #logoFooter {
-      width: 10em;
-    }
-
-    .hero-section {
-        padding: 0em 1em;
-        height: 20em;
-        padding-bottom: 5vh;
-      }
-
-      .hero-content h1 {
-        font-size: 1.5rem;
-        font-weight: bold;
-      }
-      
-      .hero-content p {
-        font-size: 0.8rem;
-        width: 100%;
-      }
-      
-      .hero-content .btn {
-        border-radius: 30px;
-        margin-top: 10px;
   }
 }
-  @media (min-width: 576px) and (max-width: 768px) {
-    #rotative-menu {
-      width: 50vw;
-    }
-  
-    #buttonContainer {
-      padding: 4vh 1em 0vh 1em;
-    }
-  
-    #closeButton {
-      font-size: 0.9rem;
-    }
-  
-    .menu-content {
-      padding: 1rem 3rem;
-    }
-  
-    .menu-content a {
-      font-size: 1rem;
-    }
-  
-    #socialMediaContainer {
-      padding: 6vh 1em 7vh 1em;
-    }
-
-    #logoFooter {
-        width: 10em;
-    }
-
-    .hero-section {
-        padding: 0em 2em;
-      }
-
-      .hero-content h1 {
-        font-size: 2rem;
-        font-weight: bold;
-      }
-      
-      .hero-content p {
-        font-size: 0.9rem;
-        width: clamp(300px, 70%, 90%)
-      }
-      
-      .hero-content .btn {
-        border-radius: 30px;
-        margin-top: 10px;
-  }
-  }
-  
-  @media (min-width: 768px) and (max-width: 1200px) {
-    #rotative-menu {
-      width: 50vw;
-    }
-  
-    #buttonContainer {
-      padding: 4vh 1em 0vh 1em;
-    }
-  
-    #closeButton {
-      font-size: 0.9rem;
-    }
-  
-    .menu-content {
-      padding: 1rem 3rem;
-    }
-  
-    .menu-content a {
-      font-size: 1.2rem;
-    }
-  
-    #socialMediaContainer {
-      padding: 6vh 2em 10vh 3em;
-    }
-
-    #logoFooter {
-        width: 9em;
-    }
-
-    .hero-section {
-        padding: 0em 2em;
-      }
-
-      .hero-content h1 {
-        font-size: 2rem;
-        font-weight: bold;
-      }
-      
-      .hero-content p {
-        font-size: 0.9rem;
-        width: clamp(300px, 70%, 90%)
-      }
-      
-      .hero-content .btn {
-        border-radius: 30px;
-        margin-top: 10px;
-  }
+@media (min-width: 576px) and (max-width: 768px) {
+  #rotative-menu {
+    width: 50vw;
   }
 
-  @media (min-width: 1200px) {
-    header {
-      padding: 1vh 13em;
-    }
-
-    #buttonContainer {
-        padding: 4vh 3em 0vh 1em;
-      }
-
-      #socialMediaContainer {
-        padding: 6vh 4em 10vh 4em;
-      }
-
-      #logoFooter {
-        width: 10em;
-    }
+  #buttonContainer {
+    padding: 4vh 1em 0vh 1em;
   }
-  
+
+  #closeButton {
+    font-size: 0.9rem;
+  }
+
+  .menu-content {
+    padding: 1rem 3rem;
+  }
+
+  .menu-content a {
+    font-size: 1rem;
+  }
+
+  #socialMediaContainer {
+    padding: 6vh 1em 7vh 1em;
+  }
+
+  #logoFooter {
+    width: 10em;
+  }
+
+  .hero-section {
+    padding: 0em 2em;
+    height: 40vh;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+    width: clamp(300px, 70%, 90%);
+  }
+
+  .hero-content .btn {
+    border-radius: 30px;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  #rotative-menu {
+    width: 50vw;
+  }
+
+  #buttonContainer {
+    padding: 4vh 1em 0vh 0em;
+  }
+
+  #closeButton {
+    font-size: 0.9rem;
+  }
+
+  .menu-content {
+    padding: 1rem 3rem;
+  }
+
+  .menu-content a {
+    font-size: 1.2rem;
+  }
+
+  #socialMediaContainer {
+    padding: 6vh 2em 10vh 3em;
+  }
+
+  #logoFooter {
+    width: 50%;
+    max-width: 12em;
+  }
+
+  .hero-section {
+    padding: 0 5vw;
+    height: 50vh;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+    width: clamp(300px, 70%, 90%);
+  }
+
+  .hero-content .btn {
+    border-radius: 30px;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    padding: 1vh 15em;
+  }
+
+  #buttonContainer {
+    padding: 4vh 3em 0vh 1em;
+  }
+
+  #socialMediaContainer {
+    padding: 6vh 4em 10vh 4em;
+  }
+
+  #logoFooter {
+    width: 10em;
+  }
+}
