@@ -172,7 +172,7 @@
 
   @media (max-width: 576px) {
     header {
-      padding: 1vh 3vw 1vh 5vw;
+      padding: 1vh 3vw 1vh 3vw;
     }
   
     h1 img {
