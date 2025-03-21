@@ -189,7 +189,7 @@ header {
 }
 #serviceContainer {
   width: 100%;
-  max-width: 75vw; /* Definindo o tamanho máximo do carrossel */
+  max-width: 75vw; 
   overflow: hidden;
   position: relative;
   margin-top: 5em;
@@ -229,10 +229,10 @@ header {
 }
 
 .dot {
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-  background-color: #bbb;
+  background-color: var(--bs-green-light);
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -264,6 +264,7 @@ header {
 }
 
 #aboutSection {
+  background-color: var(--bs-gray-light);
   padding: 5em 15em;
   gap: 8vw;
 }
@@ -299,12 +300,14 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 20vw;
+  width: 35vw;
   height: 20vw;
   cursor: pointer;
 }
 #overlay h4 {
-  width: 70%;
+  font-size: 1em;
+  margin-top: 1em;
+  width: 30%;
   text-align: center;
 }
 
@@ -343,9 +346,14 @@ header {
 }
 
 #parallaxSection img {
-    height: 60vh;
+    min-height: 60vh;
     width: 100%;
+    background-position: center;
+    object-fit: cover; 
+    object-position: center; 
+
 }
+
 @media (max-width: 576px) {
   header {
     padding: 1vh 4vw 1vh 4vw;
@@ -464,6 +472,81 @@ header {
     text-align: center;
     width: 20%;
   }
+
+  #aboutSection {
+    padding: 1vh 4vw 8vh 5vw;
+    gap: 8vw;
+  }
+  
+  #aboutText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  #aboutText h3 {
+    color: var(--bs-green-primary);
+    letter-spacing: 5px;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 3em;
+  }
+  #aboutText h2 {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 600;
+    width: 70%;
+  }
+  #aboutText p {
+    margin-top: 1em;
+    color: var(--bs-gray-secondary);
+    width: 100%;
+    font-size: 0.9em;
+  }
+
+  #missionContainer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+  }
+
+  .missionAbout img {
+    width: 8px;
+    color: var(--bs-gray-secondary);
+  }
+  
+  .missionAbout span {
+    color: var(--bs-gray-secondary);
+    font-size: 0.8em;
+  }
+
+  #thumbnail {
+    width: 100%;
+    height: 30em;
+    object-fit: cover;
+    filter: brightness(0.5);
+  }
+
+  #overlay {
+    cursor: pointer;
+  }
+  #overlay h4 {
+    margin-top: 0.5em;
+    width: 10em;
+    text-align: center;
+    font-size: 1em;
+  }
+
+  #parallaxSection img {
+    min-height: 50vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    object-position: center;
+}
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -520,6 +603,80 @@ header {
     color: var(--bs-gray-secondary);
     width: 90%;
   }
+
+  #aboutSection {
+    padding: 1vh 5vw 8vh 5vw;
+    gap: 8vw;
+  }
+  
+  #aboutText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  #aboutText h3 {
+    color: var(--bs-green-primary);
+    letter-spacing: 5px;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 3em;
+  }
+  #aboutText h2 {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 600;
+    width: 70%;
+  }
+  #aboutText p {
+    margin-top: 1em;
+    color: var(--bs-gray-secondary);
+    width: 100%;
+    font-size: 0.9em;
+  }
+
+  #missionContainer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+  }
+
+  .missionAbout img {
+    width: 8px;
+    color: var(--bs-gray-secondary);
+  }
+  
+  .missionAbout span {
+    color: var(--bs-gray-secondary);
+    font-size: 0.8em;
+  }
+
+  #thumbnail {
+    width: 100%;
+    height: 40em;
+    object-fit: cover;
+    filter: brightness(0.5);
+  }
+
+  #overlay {
+    width: 70vw;
+    cursor: pointer;
+  }
+  #overlay h4 {
+    margin-top: 0.5em;
+    width: 10em;
+    text-align: center;
+    font-size: 1em;
+  }
+
+  #parallaxSection img {
+    height: 30vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -575,6 +732,74 @@ header {
   #serviceSection p {
     width: 90%;
   }
+
+  #aboutSection {
+    padding: 1vh 5vw 8vh 5vw;
+    gap: 8vw;
+  }
+  
+  #aboutText {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-top: 3em;
+  }
+  #aboutText h3 {
+    color: var(--bs-green-primary);
+    letter-spacing: 5px;
+    font-size: 1em;
+    text-align: start;
+    
+  }
+  #aboutText h2 {
+    font-size: 1.3em;
+    font-weight: 600;
+    width: 70%;
+  }
+  #aboutText p {
+    margin-top: 1em;
+    color: var(--bs-gray-secondary);
+    width: 100%;
+    font-size: 0.9em;
+  }
+
+  #missionContainer {
+    margin-top: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+  }
+
+  .missionAbout img {
+    width: 8px;
+    color: var(--bs-gray-secondary);
+  }
+  
+  .missionAbout span {
+    color: var(--bs-gray-secondary);
+    font-size: 0.8em;
+  }
+
+  #thumbnail {
+    width: 40vw;
+    height: 70vh;
+    object-fit: cover;
+    filter: brightness(0.5);
+    margin-top: 3em;
+  }
+
+  #overlay {
+    width: 70vw;
+    cursor: pointer;
+  }
+  #overlay h4 {
+    margin-top: 0.5em;
+    width: 10em;
+    text-align: center;
+    font-size: 1em;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -598,4 +823,78 @@ header {
     margin-top: 0;
     color: var(--bs-gray-secondary);
   }
+
+  #aboutSection {
+    padding: 1vh 15em 8vh 15em;
+    gap: 8vw;
+  }
+  
+  #aboutText {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-top: 3em;
+  }
+  #aboutText h3 {
+    color: var(--bs-green-primary);
+    letter-spacing: 5px;
+    font-size: 1em;
+    text-align: start;
+    
+  }
+  #aboutText h2 {
+    font-size: 1.3em;
+    font-weight: 600;
+    width: 70%;
+  }
+  #aboutText p {
+    margin-top: 1em;
+    color: var(--bs-gray-secondary);
+    width: 100%;
+    font-size: 0.9em;
+  }
+
+  #missionContainer {
+    margin-top: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+  }
+
+  .missionAbout img {
+    width: 8px;
+    color: var(--bs-gray-secondary);
+  }
+  
+  .missionAbout span {
+    color: var(--bs-gray-secondary);
+    font-size: 0.8em;
+  }
+
+  #thumbnail {
+    width: 30vw;
+    height: 70vh;
+    object-fit: cover;
+    filter: brightness(0.5);
+    margin-top: 3em;
+  }
+
+  #overlay {
+    cursor: pointer;
+  }
+  #overlay h4 {
+    margin-top: 0.5em;
+    width: 10em;
+    text-align: center;
+    font-size: 1em;
+  }
+
+  #parallaxSection img {
+    height: 30vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
 }
