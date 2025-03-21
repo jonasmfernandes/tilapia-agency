@@ -31,21 +31,21 @@
         </nav>
       </header>
 
-      <div id="rotative-menu">
+      <nav id="rotative-menu">
         <div id="buttonContainer" class="d-flex justify-content-end">
             <button id="closeButton" class="btn d-flex gap-4 justify-content-center align-items-center menu-custom">
                 FECHAR
                 <img src="assets/icons/xmark-solid-gray.svg" alt="" />
             </button>
         </div>
-        <nav class="menu-content">
+        <div class="menu-content">
             <ul class="gap-3">
                 <li><a href="#inicio">INÍCIO</a></li>
                 <li><a href="#servicos">SERVIÇOS</a></li>
                 <li><a href="#sobre-nos">SOBRE NÓS</a></li>
                 <li><a href="#contato">CONTATO</a></li>
             </ul>
-        </nav>
+        </div>
         <footer id="socialMediaContainer" class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-5">
             <div>
                 <p class="text-white">Redes sociais:</p>
@@ -57,9 +57,9 @@
             </div>  
             <img id="logoFooter" src="assets/logo/Logo Tilápia Agency-white.svg" alt="">
         </footer>
-    </div>
+      </nav>
       
-    <section class="hero-section">
+    <main class="hero-section">
         <div class="hero-content">
           <h1 class="display-4">Soluções Digitais</h1>
           <p class="lead">Ferramentas e estratégias que aprimoram a presença online das empresas, otimizando processos e melhorando a experiência do usuário.</p>
@@ -68,6 +68,72 @@
             <span>Entre em Contato</span>
           </button>
         </div>
+      </main>
+
+      <section id="serviceSection" class="d-flex flex-column justify-content-center align-items-center gap-3">
+        <h3>SERVIÇOS</h3>
+        <h2 class="text-center">SOLUÇÕES DIGITAIS PARA SUA EMPRESA</h2>
+        <p class="text-center">A presença digital é crucial no mundo atual, mas para se destacar é necessário oferecer uma navegação simples e eficiente em seu site, plataforma, aplicativo ou e-commerce. É essencial que suas soluções, produtos e serviços sejam apresentados de forma clara e atrativa, além de contar com recursos que melhorem a experiência e a praticidade para seus usuários. Estamos aqui para ajudar a desenvolver essas soluções e garantir sua divulgação de forma eficaz.</p>
+
+        <div id="serviceContainer" class="d-flex flex-row justify-content-center align-items-center overflow-hidden">
+          <div class="serviceWrapper d-flex">
+          <div class="serviceContent">
+            <div class="serviceCircle">
+                <img src="assets/icons/digital-solutions/desktop-solid.svg" alt="">
+            </div>
+            <h3>Desenvolvimentos Personalizados</h3>
+            <p>Soluções sob medida para atender suas necessidades.</p>
+          </div>
+        
+          <div class="serviceContent">
+              <div class="serviceCircle">
+                  <img src="assets/icons/digital-solutions/code-solid.svg" alt="">
+              </div>
+              <h3>Aplicativos Móveis</h3>
+              <p>Criação de aplicativos nativos e híbridos para plataformas iOS e Android.</p>
+          </div>
+        
+          <div class="serviceContent">
+              <div class="serviceCircle">
+                  <img src="assets/icons/digital-solutions/percent-solid.svg" alt="">
+              </div>
+              <h3>Sites e Landing Pages</h3>
+              <p>Criação e design de sites responsivos e páginas de captura personalizadas.</p>
+          </div>
+        
+          <div class="serviceContent">
+              <div class="serviceCircle">
+                  <img src="assets/icons/digital-solutions/laptop-code-solid.svg" alt="">
+              </div>
+              <h3>Otimização para Motores de Busca (SEO)</h3>
+              <p>Estratégias para melhorar o posicionamento de sites.</p>
+          </div>
+        
+          <div class="serviceContent">
+              <div class="serviceCircle">
+                  <img src="assets/icons/digital-solutions/bullhorn-solid.svg" alt="">
+              </div>
+              <h3>Gestão de Mídias Sociais</h3>
+              <p>Planejamento e execução de campanhas em plataformas digitais.</p>
+          </div>
+        
+          <div class="serviceContent">
+              <div class="serviceCircle">
+                  <img src="assets/icons/digital-solutions/pen-nib-solid.svg" alt="">
+              </div>
+              <h3>Design Gráfico e Branding</h3>
+              <p>Criação de identidade visual, logotipos, materiais gráficos e branding completo.</p>
+          </div>
+        </div>
+      </div>
+      <div id="carouselIndicators" class="d-flex justify-content-center gap-2">
+        <div class="dot active" data-slide="0"></div>
+        <div class="dot" data-slide="1"></div>
+        <div class="dot" data-slide="2"></div>
+        <div class="dot" data-slide="3"></div>
+        <div class="dot" data-slide="4"></div>
+        <div class="dot" data-slide="5"></div>
+      </div>
       </section>
 
     <script
