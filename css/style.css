@@ -102,9 +102,77 @@
     color: var(--bs-green-hover);
   }
   
+  .hero-section {
+    position: relative;
+    display: flex;
+    padding: 0em 13em;
+    justify-content: start;
+    align-items: center;
+    height: 60vh; 
+    background-size: cover;
+    background-position: center;
+    animation: changeBackground 12s infinite; 
+    overflow: hidden;
+  }
+
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: changeBackground 12s infinite;
+    filter: brightness(0.5); 
+    z-index: 1; 
+  }
+  
+  @keyframes changeBackground {
+    0% {
+      background-image: url('/assets/banner/businesswoman.png');
+    }
+    33% {
+      background-image: url('/assets/banner/css-js-banner.png');
+    }
+    66% {
+      background-image: url('/assets/banner/Foto-2.png');
+    }
+    100% {
+      background-image: url('/assets/banner/businesswoman.png');
+    }
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;    
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start; 
+    color: white;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+    width: 55%;
+  }
+  
+  .hero-content .btn {
+    border-radius: 30px;
+    margin-top: 10px;
+    padding: 1vh 3em;
+  }
+
   @media (max-width: 576px) {
     header {
-      padding: 1vh 3vw;
+      padding: 1vh 3vw 1vh 5vw;
     }
   
     h1 img {
@@ -138,8 +206,28 @@
     #socialMediaContainer #logoFooter {
       width: 10em;
     }
+
+    .hero-section {
+        padding: 0em 1em;
+        height: 20em;
+        padding-bottom: 5vh;
+      }
+
+      .hero-content h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      
+      .hero-content p {
+        font-size: 0.8rem;
+        width: 100%;
+      }
+      
+      .hero-content .btn {
+        border-radius: 30px;
+        margin-top: 10px;
   }
-  
+}
   @media (min-width: 576px) and (max-width: 768px) {
     #rotative-menu {
       width: 50vw;
@@ -168,6 +256,25 @@
     #logoFooter {
         width: 10em;
     }
+
+    .hero-section {
+        padding: 0em 2em;
+      }
+
+      .hero-content h1 {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      
+      .hero-content p {
+        font-size: 0.9rem;
+        width: clamp(300px, 70%, 90%)
+      }
+      
+      .hero-content .btn {
+        border-radius: 30px;
+        margin-top: 10px;
+  }
   }
   
   @media (min-width: 768px) and (max-width: 1200px) {
@@ -198,6 +305,25 @@
     #logoFooter {
         width: 9em;
     }
+
+    .hero-section {
+        padding: 0em 2em;
+      }
+
+      .hero-content h1 {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      
+      .hero-content p {
+        font-size: 0.9rem;
+        width: clamp(300px, 70%, 90%)
+      }
+      
+      .hero-content .btn {
+        border-radius: 30px;
+        margin-top: 10px;
+  }
   }
 
   @media (min-width: 1200px) {
